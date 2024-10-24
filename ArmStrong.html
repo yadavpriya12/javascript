@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt("Enter any number"))
+        let rem=0;
+        let res=0;
+        let x=num
+
+        while(num>0)
+    {
+        rem=num % 10
+        res=res+(rem * rem * rem)
+        num = parseInt(num /10)
+
+    }
+    document.write(res)
+
+    if( x == res)
+    {
+        document.writeln("number is armstrong")
+    }
+    else
+    {
+        document.writeln("number is not armstrong")
+    }
+    </script>
+</body>
+</html>

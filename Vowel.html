@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vowels Count</h1>
+    <input id ="v" placeholder="enter a string">
+    <button onclick="vowel()">submit</button>
+    <input id = "count">
+    <script>
+function vowel()
+{
+    let j=0;
+   let s = document.getElementById("v").value 
+  let count=0
+  for(let i=0 ; i<=s.length-1;i++)
+  {
+      j=s.charAt(i)
+   if(j=='a'|| j=='e'||j== 'o' ||j== 'i' || j== 'u')
+   {
+       count++
+   }
+}
+
+parseInt(document.getElementById("count").value=count)
+}
+    </script>
+</body>
+</html>
