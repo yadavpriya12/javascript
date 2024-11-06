@@ -1,0 +1,116 @@
+  <!-- -----first----
+<html>
+    <body>
+       <center> 
+        <img  id="main" src="https://tse2.mm.bing.net/th?id=OIP.7cRYFyLoDEDh4sRtM73vvwHaDg&pid=Api&P=0&h=220" width="100px" height="100px"/>
+       </center>
+       <script>
+          var mainImage = document.getElementById("main");
+          mainImage.width = "300";
+          mainImage.height = "300";
+          mainImage.style.border="1px solid red";
+
+       </script> 
+    </body>
+</html> 
+
+-- ------second------------
+<html>
+    <body>
+        <center>
+            <img  id="main" src= "https://tse2.mm.bing.net/th?id=OIP.7cRYFyLoDEDh4sRtM73vvwHaDg&pid=Api&P=0&h=220" width="100px" height="100px"/>
+            <br><br>
+            <button onclick="incrementSize()">+</button>
+            <button onclick="decrementSize()">-</button>
+        </center>
+
+        <script>
+            function incrementSize(){
+              var mainImage = document.getElementById("main");
+              mainImage.width = mainImage.width*1 + 20;
+              mainImage.height = mainImage.height*1 + 20;
+            }
+            function decrementSize(){
+              var mainImage = document.getElementById("main");
+              mainImage.width = mainImage.width*1 - 20;
+              mainImage.height = mainImage.height*1 - 20;
+            }
+        </script>
+    </body>
+</html> 
+
+----third-----
+
+ <html>
+    <body>
+        <center>
+            <img  id="main" src="image.png" width="100px" height="100px"/>
+            <br><br>
+            <button onclick="changeSize(1)">+</button>
+            <button onclick="changeSize(0)">-</button>
+        </center>
+
+        <script>
+            function changeSize(n){
+               var mainImage = document.getElementById("main");
+               if(n){
+                  mainImage.width = mainImage.width*1 + 20;
+                  mainImage.height = mainImage.height*1 + 20;
+               }
+               else{
+                  mainImage.width = mainImage.width*1 - 20;
+                  mainImage.height = mainImage.height*1 - 20;
+               }
+            }
+
+        
+        </script>
+    </body>
+</html> 
+
+-----fourth----------
+
+<html>
+    <body>
+        <center>
+            <img id="main" src="image.png" width="350" height="350"/>
+            <br><br><br>
+            <img onclick="changeImage('first')" id="first" src="https://tse1.mm.bing.net/th?id=OIP._FJFJqCgfY1GSl100ui2SQHaE5&pid=Api&P=0&h=220" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="changeImage('second')" id="second" src="https://tse1.mm.bing.net/th?id=OIP.vpUUrAb6H7eMCIM4TRzpcAHaFj&pid=Api&P=0&h=220" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="changeImage('third')" id="third" src="https://tse3.mm.bing.net/th?id=OIP.GETJDIRmXTZcAJ2tu_GU_AAAAA&pid=Api&P=0&h=220" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        </center>
+        <script>
+            function changeImage(currentImageId){
+               var mainImage = document.getElementById("main");
+               var currentImage = document.getElementById(currentImageId);
+
+               var temp = mainImage.src;
+               mainImage.src = currentImage.src;
+               currentImage.src = temp;
+            }
+        </script>
+    </body>
+</html>
+
+------fifth----- -->
+<html>
+    <body>
+        <center>
+            <img id="main" src="image.png" width="350" height="350"/>
+            <br><br><br>
+            <img onclick="changeImage(this)" id="first" src="https://tse1.mm.bing.net/th?id=OIP._FJFJqCgfY1GSl100ui2SQHaE5&pid=Api&P=0&h=220" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="changeImage(this)" id="second" src="https://tse1.mm.bing.net/th?id=OIP.vpUUrAb6H7eMCIM4TRzpcAHaFj&pid=Api&P=0&h=220" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+            <img onclick="changeImage(this)" id="third" src="https://tse3.mm.bing.net/th?id=OIP.GETJDIRmXTZcAJ2tu_GU_AAAAA&pid=Api&P=0&h=220" width="100" height="100"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        </center>
+        <script>
+            function changeImage(currentImage){
+               var mainImage = document.getElementById("main");
+             
+               var temp = mainImage.src;
+               mainImage.src = currentImage.src;
+               currentImage.src = temp;
+            }
+        </script>
+    </body>
+</html>
+

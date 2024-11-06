@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1> Swaping the no.</h1>
+ <input  id= "input1" type="number">
+ <input  id= "input2" type="number">
+ <button onclick="swap()">Search the no.</button>
+ <input id="print1">
+ <input id ="print2">
+ 
+    <script>
+        function swap()
+        {
+       let a= parseInt(document.getElementById("input1").value);
+       let b= parseInt(document.getElementById("input2").value);
+        let c=0
+
+         c=a
+         a=b
+         b=c
+        
+ document.getElementById("print1").value=a;
+ document.getElementById("print2").value=b;
+        }
+
+    </script>
+</body>
+</html>

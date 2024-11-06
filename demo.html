@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input id="con1">
+<input id="con2">
+<br><br>
+<button onclick="Concat()">Concat</button>
+<input id="print1">
+<br><br>
+
+<button onclick="Upper()">Upper</button>
+<input id="print2">
+ <br><br>
+
+<button onclick="Lower()">Lower</button>
+<input id="print3">
+<br><br>
+
+<script>
+
+function Concat()
+{
+    let a = document.getElementById("con1").value;
+    let b = document.getElementById("con2").value;
+    let c = a.concat(b);
+    document.getElementById("print1").value=c;
+}
+Concat();
+
+function Upper()
+{
+    let c = document.getElementById("con1").value;
+    let d = c.toUpperCase();
+    document.getElementById("print2").value=d;
+}
+Upper();
+
+
+function Lower()
+{
+    let c = document.getElementById("con2").value;
+    let e = c.toLowerCase();
+    document.getElementById("print3").value=e;
+}
+Lower();
+</script>
+
+</body>
+</html>
