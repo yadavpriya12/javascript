@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1,232,665,788,98,7,5,4,2]
+         for(let i =0;i<arr.length;i++)
+         {
+            for(let j=i+1;j<arr.length;j++)
+         {
+            if(arr[i]>arr[j])
+         {
+            let temp=arr[i]
+            arr[i] = arr[j]
+            arr[j] = temp
+         }
+         }
+         }
+         console.log(arr)
+        
+     let s = 0;
+     let m ;
+     let e = arr.length -1;
+    let flag =0;
+     let srch = parseInt(prompt("enter any number"))
+    
+         for( let i = 0;i<arr.length;i++)
+         {
+        m = parseInt((s + e)/2);
+        if(srch==arr[m])
+        {
+            flag=1;
+            break;
+        }
+         else if (srch>arr[m])
+        {
+          s = m +1;
+        }
+
+        else{
+            s = m-1;
+        }
+    }
+    if(flag == 1)
+    {
+        alert(arr[m]+" is  a present")
+        
+    }
+    else{
+        alert("no.is not present")
+    }
+
+
+   
+        
+    </script>
+</body>
+</html>
