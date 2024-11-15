@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    let str = prompt("enter any string")
+        let vowel_count = 0
+        let consonant_count = 0
+
+        for(let i=0;i<str.length;i++)
+        {
+            let char = str[i]
+
+            if(char == 'a' || char =='e' || char == 'o' || char == 'i' || char=='u'|| char == 'A' || char =='E' || char == 'O' || char == 'I' || char=='U' )
+        {
+            vowel_count++
+        }
+        else
+        {
+           consonant_count++
+        }
+        }
+        document.writeln(`vowel_count: ${vowel_count}`)
+        document.writeln(`consonant_count: ${consonant_count}`)
+  </script>  
+</body>
+</html>

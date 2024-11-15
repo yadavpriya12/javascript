@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    //Ascending Order
+    let arr = [12,76,44,65,23,9,2,45,1,6]
+    for(let i =0;i<arr.length;i++)
+   {
+    for(let j=i+1; j<arr.length;j++)
+   {
+    if(arr[i]>arr[j])
+   {
+    let temp = arr[i]
+    arr[i] = arr[j]
+    arr[j] = temp
+   }
+   }
+   }
+   console.log(arr)
+
+
+   //Descending Order
+   let arr1 = [12,76,44,65,23,9,2,45,1,6]
+    for(let i =0;i<arr1.length;i++)
+   {
+    for(let j=i+1; j<arr1.length;j++)
+   {
+    if(arr1[i]<arr1[j])
+   {
+    let temp = arr1[i]
+    arr1[i] = arr1[j]
+    arr1[j] = temp
+   }
+   }
+   }
+   console.log(arr1)
+   </script> 
+</body>
+</html>

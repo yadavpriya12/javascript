@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = prompt("enter any string")
+        let alphabet=0;
+        let digit = 0;
+        let special_character = 0;
+
+        for(let i =0;i <str.length;i++)
+    {
+        let char = str[i]
+        if((char >= 'A' && char <='Z') || (char >='a' && char <='z'))
+    {
+        alphabet++
+    }
+
+    else if(char >=0 && char <=9)
+    {
+        digit++
+    }
+    else
+    {
+      special_character++  
+    }
+    }
+
+    document.writeln( `alphabet = ${alphabet}`)
+    document.writeln(`digit = ${digit}`)
+    document.write(`special_character = ${special_character}`)
+    </script> 
+</body>
+</html>

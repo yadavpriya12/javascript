@@ -9,11 +9,20 @@
     <script>
         let arr = [1,0,2,-1,-6,1,-4]
         let arr1=[]
-        for(let i =0; i<arr.length;i++)
+
+         for(let i =0;i<arr.length;i++)
+         {
+            if(arr[i]<0)
+         {
+            arr1.push(arr[i])
+         }
+         }
+
+       for(let j =0; j<arr.length;j++)
     {
-        if(arr[i]>=0)
+        if(arr[j]>=0)
     {
-      arr1.push(arr[i])
+      arr1.push(arr[j])
     }
     }
     console.log(arr1)
