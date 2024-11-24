@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class Test{
+        //   static data = 100;
+        //   m1(){
+        //       console.log("m1-executed..."+Test.data);
+        //   }
+        //   m2(){
+        //       function m4(){
+        //         console.log("m4-executed....");
+        //       }
+        //       m4();
+        //       console.log("m2-executed...");
+        //   }
+        //   static m3(){
+        //       console.log("m3-executed...."+Test.data);
+        //   }
+        // }
+        // let obj = new Test();
+        // obj.m1();
+        // obj.m2();
+        // Test.m3();
+        // console.log(Test.data);
+
+        class Test
+        {
+           static data = 100;
+
+           m1()
+           {
+        console.log("m1-Executed....." + Test.data);
+           }
+           m2()
+           {
+           function m4()
+           {
+        console.log("m4-executed...."+Test.data);
+           }
+           m4();
+           console.log("m2-executed....."+Test.data)
+           }
+       // we create a function into a function but we call only in their scope
+           static  m3()
+           {
+          console.log("m3-executed....."+Test.data);
+           }
+        }
+
+        let obj = new Test();
+        obj.m1();
+        obj.m2();
+        Test.m3();
+        console.log(Test.data);
+
+        // if method is static then we call directly with class name
+        // otherwise we call through the creating object
+      </script> 
+</body>
+</html>
